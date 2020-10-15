@@ -1,0 +1,100 @@
+// These arguments were used when this file was generated. They will be automatically applied on subsequent loads 
+// via the GUI or CLI invocations. Run CLI with '--help' for additional information on how to override these arguments.
+// @cliArgs --device "TM4C123x" --package "64 Pin QFP|16x16" --part "TM4C123GH6PM"
+// @versions {"data":"2020022712","timestamp":"2020022712","tool":"1.3.1030","templates":"2020022712"}
+
+var iADC1 = scripting.addPeripheral("ADC");
+// Name
+iADC1.$name = "BatAdc";
+// Used
+iADC1.AIN9.$used = false;
+// Used
+iADC1.AIN4.$used = false;
+// Used
+iADC1.AIN8.$used = false;
+// Used
+iADC1.AIN6.$used = false;
+// Used
+iADC1.AIN1.$used = false;
+// Used
+iADC1.AIN2.$used = false;
+// Used
+iADC1.AIN3.$used = false;
+// Used
+iADC1.AIN11.$used = false;
+// Used
+iADC1.AIN10.$used = false;
+// Used
+iADC1.AIN7.$used = false;
+// Used
+iADC1.AIN5.$used = false;
+var iGPIO1 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO1["0"].pu_pd = "pd";
+// Assign pin
+iGPIO1["0"].$assign = "PC7"; // pin number - 13
+// Name
+iGPIO1.$name = "TuningKnobPress";
+var iGPIO2 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO2["0"].pu_pd = "pd";
+// IO
+iGPIO2["0"].io = "output";
+// Name
+iGPIO2.$name = "MeasVcc";
+var iI2C1 = scripting.addPeripheral("I2C");
+// Name
+iI2C1.$name = "TunerI2C";
+var iQEI1 = scripting.addPeripheral("QEI");
+// Name
+iQEI1.$name = "TuningKnob";
+// Used
+iQEI1.IDX.$used = false;
+var iUART1 = scripting.addPeripheral("UART");
+// Name
+iUART1.$name = "DebugUart";
+// Used
+iUART1.RTS.$used = false;
+// Used
+iUART1.CTS.$used = false;
+var iUSB1 = scripting.addPeripheral("USB");
+// Name
+iUSB1.$name = "RigCtrl";
+// Suggest solution
+iADC1.$suggestSolution = "ADC1";
+// Suggest solution
+iADC1.AIN0.$suggestSolution = "6";
+// Suggest solution
+iGPIO2["0"].$suggestSolution = "1";
+// Suggest solution
+iI2C1.$suggestSolution = "I2C0";
+// Suggest solution
+iI2C1.SCL.$suggestSolution = "47";
+// Suggest solution
+iI2C1.SDA.$suggestSolution = "48";
+// Suggest solution
+iQEI1.$suggestSolution = "QEI0";
+// Suggest solution
+iQEI1.PHA.$suggestSolution = "53";
+// Suggest solution
+iQEI1.PHB.$suggestSolution = "10";
+// Suggest solution
+iUART1.$suggestSolution = "UART0";
+// Suggest solution
+iUART1.RX.$suggestSolution = "17";
+// Suggest solution
+iUART1.TX.$suggestSolution = "18";
+// Suggest solution
+iUSB1.$suggestSolution = "USB0";
+// Suggest solution
+iUSB1.VBUS.$suggestSolution = "46";
+// Suggest solution
+iUSB1.EPEN.$suggestSolution = "14";
+// Suggest solution
+iUSB1.DP.$suggestSolution = "44";
+// Suggest solution
+iUSB1.PFLT.$suggestSolution = "64";
+// Suggest solution
+iUSB1.DM.$suggestSolution = "43";
+// Suggest solution
+iUSB1.ID.$suggestSolution = "45";
